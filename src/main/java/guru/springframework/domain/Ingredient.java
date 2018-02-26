@@ -5,6 +5,9 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 /**
  * Created by jt on 6/13/17.
  */
@@ -12,6 +15,7 @@ import java.math.BigDecimal;
 @Setter
 public class Ingredient {
 
+    @Id
     private String id;
     private String description;
     private BigDecimal amount;
